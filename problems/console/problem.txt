@@ -30,3 +30,8 @@ For debugging, there are a few more useful methods:
 In day-to-day debugging, console.error, console.dir and console.trace
 are the most useful of these functions. They will give you the why,
 the what, and the where without requiring a bunch of extra effort.
+
+The following program has something wrong with it. O_O Use a combination
+of console.[log, trace, ...] to get it sorted out.
+
+

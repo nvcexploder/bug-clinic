@@ -9,17 +9,17 @@ var peach = function (obj) {
 
 var bowser = function (callback) {
 
-    fs.readFile(process.cwd() + "/problems/console/object.json", callback);
+    fs.readFile(process.cwd() + "/object.json", callback);
 }
-
-bowser(koopa);
 
 var koopa = function (err, file) {
 
     if (err) {
-        //NOOOOOO
+        console.log("Handle your errors folks.");
     }
 
     peach(JSON.parse(file));
 }
+
+bowser(koopa);
 

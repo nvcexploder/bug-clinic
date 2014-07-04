@@ -31,7 +31,29 @@ In day-to-day debugging, console.error, console.dir and console.trace
 are the most useful of these functions. They will give you the why,
 the what, and the where without requiring a bunch of extra effort.
 
-The following program has something wrong with it. O_O Use a combination
-of console.[log, trace, ...] to get it sorted out.
+The following program should console.log the value of a file, BUT IT DOESN'T.
 
+    var fs = require("fs");
 
+    var peach = function (obj) {
+
+        console.log(obj);
+    }
+
+    var bowser = function (callback) {
+
+        fs.readFile(process.cwd() + "/problems/console/object.json", callback);
+    }
+
+    bowser(koopa);
+
+    var koopa = function (err, file) {
+
+        if (err) {
+            //NOOOOOO
+        }
+
+        peach(JSON.parse(file));
+    }
+
+Use a combination of console functions to sort out what's up and fix it.

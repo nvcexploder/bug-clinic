@@ -1,6 +1,6 @@
 {
   "name": "bug-clinic",
-  "version": "0.2.0-0",
+  "version": "1.1.5",
   "description": "Teach yourself how to debug Node apps more better.",
   "bin": {
     "bug-clinic": "bin/cmd.js"
@@ -27,9 +27,11 @@
     "url": "http://driftglass.org"
   },
   "contributors": [
+    "Ben Acker <benacker@gmail.com>",
     "max ogden",
     "Jacob Groundwater <groundwater@gmail.com>",
-    "Trevor Norris <trev.norris@gmail.com>"
+    "Trevor Norris <trev.norris@gmail.com>",
+    "Martin Andrews <github@mdda.net>"
   ],
   "license": "BSD",
   "bugs": {
@@ -38,14 +40,20 @@
   "dependencies": {
     "adventure": "^2.4.0",
     "adventure-verify": "^2.1.1",
+    "bunyan": "^0.23.1",
     "concat-stream": "^1.4.6",
     "default-pager": "^1.0.1",
     "eslint": "^0.6.2",
     "graceful-fs": "^3.0.2",
     "jshint": "^2.5.1",
+    "jstrace": "^0.3.0",
     "minimist": "^0.2.0",
     "mkdirp": "^0.5.0",
     "moment": "^2.7.0",
+    "repl-client": "^0.3.0",
+    "replify": "^1.2.0",
+    "replpad": "^0.11.9",
+    "request": "^2.36.0",
     "resumer": "0.0.0",
     "stackup": "0.0.3",
     "terminal-menu": "^0.3.2",
